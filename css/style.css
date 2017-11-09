@@ -21,49 +21,12 @@
 html {
     font-size: 10px;
 }
-body {
+.container {
     max-width: 1280px;
     margin: 0 auto;
+    padding: 10px 15px 10px;
 }
 
 /* header ----------------------*/
-.headerRow1 {
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-between;
-    align-items: center;
-    height: 40px;
-    font-size: 1.6rem;
-}
 
-.schedule {
-    display: flex;
-    justify-content: space-between;
-    width: 240px;
-}
 
-.menu1 {
-    list-style: none;
-    padding: 0;
-    margin: 0 auto;
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-between;
-    width: 500px;
-}
-
-.login {
-    margin: 0 0 0 200px;
-}
-.shoppingBag {
-    display: flex;
-    justify-content: space-between;
-    width: 30px;
-}
-.menu1 li {
-    display: inline-block;
-}
-
-.headerRow1 a{
-    text-decoration: none;
-}
