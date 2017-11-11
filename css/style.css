@@ -1,7 +1,9 @@
+
+
 @font-face {
     font-family: "ProximaNovaRegular";
     src: url("../fonts/ProximaNovaRegular/ProximaNovaRegular.eot");
-    src: url("../fonts/ProximaNovaRegular/ProximaNovaRegular.eot?#iefix")format("embedded-opentype"),
+    src: url("../fonts/ProximaNovaRegular/ProximaNovaRegular.eot?#iefix") format("embedded-opentype"),
     url("../fonts/ProximaNovaRegular/ProximaNovaRegular.woff") format("woff"),
     url("../fonts/ProximaNovaRegular/ProximaNovaRegular.ttf") format("truetype");
     font-style: normal;
@@ -11,22 +13,110 @@
 @font-face {
     font-family: "ProximaNovaBold";
     src: url("../fonts/ProximaNovaBold/ProximaNovaBold.eot");
-    src: url("../fonts/ProximaNovaBold/ProximaNovaBold.eot?#iefix")format("embedded-opentype"),
+    src: url("../fonts/ProximaNovaBold/ProximaNovaBold.eot?#iefix") format("embedded-opentype"),
     url("../fonts/ProximaNovaBold/ProximaNovaBold.woff") format("woff"),
     url("../fonts/ProximaNovaBold/ProximaNovaBold.ttf") format("truetype");
     font-style: normal;
     font-weight: 700;
 }
+
 /* general ---------------------*/
-html {
+*{
     font-size: 10px;
+    box-sizing: border-box;
 }
+
+html{
+    font: 10px ProximaNovaRegular, sans-serif;
+}
+
+
 .container {
     max-width: 1280px;
+    background: lightgrey;
     margin: 0 auto;
-    padding: 10px 15px 10px;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+hr {
+    border: 0;
+    width: 43px;
+    height: 2px;
+    background: black;
+    margin: 10px 0;
 }
 
 /* header ----------------------*/
+
+/* row 1 ----------------------*/
+.header-row-1 {
+    height: 30px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 0 15px 0;
+    font-weight: 600;
+}
+
+.header-row-1 > * {
+    display: flex;
+    align-items: flex-end;
+}
+.header-row-1 .contacts {
+    flex: 0 0 25%;
+    justify-content: flex-start;
+}
+
+.contacts .workHours {
+    font-size: 1.2rem;
+    color: #9c9c9c;
+}
+
+.contacts .workTel {
+    font-size: 1.4rem;
+    margin-right: 10%;
+}
+.menu-aux {
+    flex: 0 0 50%;
+    justify-content: space-between;
+    color: #9c9c9c;
+}
+
+.menu-aux ul {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+.menu-aux a:hover {
+    text-decoration: underline;
+}
+.login {
+    flex: 0 0 22%;
+    justify-content: flex-end;
+}
+
+.login a {
+    flex: 0 1 auto;
+    margin-right: 10%;
+    text-transform: uppercase;
+    color: #9c9c9c;
+}
+
+.login a:hover {
+    text-decoration: underline;
+}
+
+.shoppingBag {
+    flex: 0 0 3%;
+    justify-content: space-between;
+}
+.shoppingBag span {
+    font-size: 1.2rem;
+}
 
 
