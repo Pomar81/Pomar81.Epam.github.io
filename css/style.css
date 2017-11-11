@@ -84,13 +84,14 @@ hr {
 .menu-aux {
     flex: 0 0 50%;
     justify-content: space-between;
-    color: #9c9c9c;
 }
 
 .menu-aux ul {
     width: 100%;
     display: flex;
     justify-content: space-around;
+    text-transform: uppercase;
+    color: #9c9c9c;
 }
 .menu-aux a:hover {
     text-decoration: underline;
