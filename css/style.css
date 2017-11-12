@@ -1,5 +1,4 @@
 
-
 @font-face {
     font-family: "ProximaNovaRegular";
     src: url("../fonts/ProximaNovaRegular/ProximaNovaRegular.eot");
@@ -22,7 +21,6 @@
 
 /* general ---------------------*/
 *{
-    font-size: 10px;
     box-sizing: border-box;
 }
 
@@ -30,7 +28,11 @@ html{
     font: 10px ProximaNovaRegular, sans-serif;
 }
 
-
+main, header, footer {
+    max-width: 1280px;
+    background: lightgrey;
+    margin: 0 auto;
+}
 .container {
     max-width: 1280px;
     background: lightgrey;
@@ -50,9 +52,25 @@ hr {
     margin: 10px 0;
 }
 
-/* header ----------------------*/
+h1 {
+    font: 2.4rem ProximaNovaBold,  sans-serif;
+    text-transform: uppercase;
+}
 
-/* row 1 ----------------------*/
+h2 {
+    font: 7.2rem 'Goudy Trajan Regular', serif;
+    text-transform: uppercase;
+}
+h3 {
+    font: 1.7rem ProximaNovaBold,  sans-serif;
+    text-transform: uppercase;
+    margin-bottom: 16px;
+    color: white
+}
+
+
+
+/* header row 1 ----------------------*/
 .header-row-1 {
     height: 30px;
     display: flex;
@@ -67,6 +85,7 @@ hr {
     display: flex;
     align-items: flex-end;
 }
+
 .header-row-1 .contacts {
     flex: 0 0 25%;
     justify-content: flex-start;
@@ -120,4 +139,170 @@ hr {
     font-size: 1.2rem;
 }
 
+/* header row 2 ----------------------*/
+.header-row-2 {
+    height: 96px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+}
 
+/* header row 3 ---------------------*/
+.header-row-3{
+    height: 96px;
+    font: 13px ProximaNovaBold,  sans-serif;
+}
+
+.header-row-3 ul {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    text-transform: uppercase;
+    align-items: center;
+}
+
+.header-row-3  a:hover {
+    color: chocolate;
+}
+
+
+/* main ---------------*/
+.advert {
+    height: 515px;
+    border: 1px solid;
+    position: relative;
+}
+
+.advert h2 {
+    position: absolute;
+    top: 100px;
+    left: 100px;
+}
+
+.advert hr {
+    position: absolute;
+    left: 107px;
+    top: 200px;
+}
+
+.advert .motto {
+    position: absolute;
+    left: 107px;
+    top: 250px;
+}
+
+.advert .product-img {
+    position: absolute;
+    left: 280px;
+    top: 290px;
+}
+.main-row-1 {
+    display: flex;
+    justify-content: flex-start;
+    flex-flow: row nowrap;
+    align-items: center;
+}
+
+.main-row-1 .col-1-3 {
+    flex: 0 0 33.333%;
+    height: 195px;
+    border: 1px solid;
+}
+
+.main-row-2 {
+    display: flex;
+    justify-content: flex-start;
+    flex-flow: row nowrap;
+    align-items: center;
+}
+
+.main-row-2 .col-1-3 {
+    flex: 0 0 33.333%;
+    height: 300px;
+    border: 1px solid;
+}
+
+.main-row-3 {
+    display: flex;
+    justify-content: flex-start;
+    flex-flow: row nowrap;
+    align-items: center;
+}
+
+.main-row-3 .col-1-3 {
+    flex: 0 0 33.333%;
+    height: 300px;
+    border: 1px solid;
+}
+
+.main-row-4 {
+    display: flex;
+    justify-content: flex-start;
+    flex-flow: row nowrap;
+    align-items: center;
+}
+
+.main-row-4 .col-1-3 {
+    flex: 0 0 33.333%;
+    height: 300px;
+    border: 1px solid;
+}
+
+.main-row-5 {
+    display: flex;
+    justify-content: flex-start;
+    flex-flow: row nowrap;
+    align-items: center;
+}
+
+.main-row-5 .col-1-3 {
+    flex: 0 0 33.333%;
+    height: 300px;
+    border: 1px solid;
+}
+
+.main-row-5 .col-2-3 {
+    flex: 0 0 66.666%;
+    height: 300px;
+    border: 1px solid;
+}
+
+
+/* footer -------------*/
+.footer {
+    height: 300px;
+    display: flex;
+    justify-content: space-around;
+    align-items: stretch;
+    padding: 30px 15px;
+    background-color: black;
+    color: #8e8e8e;
+    font-size: 1.2rem;
+}
+
+.footer > div {
+    flex: 0 0 12%;
+}
+
+.footer > div:first-child {
+    padding-right: 10px;
+    line-height: 1.4;
+}
+
+.footer > div ul {
+    line-height: 2;
+}
+.footer > div:nth-child(5) ul {
+    padding-right: 10px;
+    line-height: normal;
+}
+
+.footer > div:nth-child(5) li {
+    padding-bottom: 24px;
+}
+.social-ico span {
+    color: #c59a77;
+    font-size: 20px;
+}
