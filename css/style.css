@@ -24,15 +24,18 @@
     box-sizing: border-box;
 }
 
-html{
+html, body {
+    height: 100%;
     font: 10px ProximaNovaRegular, sans-serif;
 }
 
-main, header, footer {
+
+ .container {
     max-width: 1280px;
     background: lightgrey;
     margin: 0 auto;
 }
+
 .container {
     max-width: 1280px;
     background: lightgrey;
@@ -282,18 +285,18 @@ h3 {
     font-size: 1.2rem;
 }
 
-.footer > div {
+.footer > .col-1-6 {
     flex: 0 0 12%;
 }
 
 .footer > div:first-child {
-    padding-right: 10px;
     line-height: 1.4;
 }
 
 .footer > div ul {
     line-height: 2;
 }
+
 .footer > div:nth-child(5) ul {
     padding-right: 10px;
     line-height: normal;
