@@ -32,13 +32,11 @@ html, body {
 
  .container {
     max-width: 1280px;
-    background: lightgrey;
     margin: 0 auto;
 }
 
 .container {
     max-width: 1280px;
-    background: lightgrey;
     margin: 0 auto;
 }
 
@@ -176,24 +174,73 @@ h3 {
     height: 515px;
     border: 1px solid;
     position: relative;
+    display: flex;
+    flex-flow: nowrap column;
+    justify-content: center;
+    padding-left: 100px;
+    padding-bottom: 100px;
 }
 
 .advert h2 {
-    position: absolute;
+    /*position: absolute;
     top: 100px;
-    left: 100px;
+    left: 100px;*/
+    margin-left: -7px;
+    line-height: 1;
 }
 
 .advert hr {
-    position: absolute;
+   /* position: absolute;
     left: 107px;
-    top: 200px;
+    top: 200px;*/
+    margin: 30px 0;
 }
 
 .advert .motto {
-    position: absolute;
+   /* position: absolute;
     left: 107px;
-    top: 250px;
+    top: 250px;*/
+}
+
+.detailInfo a {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+    background-color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    color: #c59a77;
+    font-size: 1.2rem;
+}
+
+.arrow-right  {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    bottom: 275px;
+    right: 60px;
+    background-color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #c59a77;
+    font-size: 1.6rem;
+    padding-left: 2px;
+}
+
+
+.detailInfo a:hover,  .arrow-right:hover {
+    background-color: #c59a77;
+    color: white;
+}
+.advertView {
+    display: none;
 }
 
 .advert .product-img {
@@ -213,6 +260,7 @@ h3 {
     flex: 0 0 33.333%;
     border: 1px solid;
     height: 300px;
+    position: relative;
 }
 
 .mainItem.top{
@@ -223,6 +271,49 @@ h3 {
     flex: 0 0 66.666%;
 }
 
+.mainItem .arrow-right {
+    bottom: 30px;
+    left: 40px;
+}
+
+.arrow-right.black-arrow {
+    color: white;
+    background-color: black;
+    border: 1px solid  #c59a77;
+}
+
+.arrow-right.black-arrow:hover {
+    color: black;
+    background-color: white;
+    border: none;
+}
+
+.top-category {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 30px 30px;
+    width: 200px;
+
+    font: 1.8rem ProximaNovaBold,  sans-serif;
+}
+
+.mainItem.top:first-child{
+    background: url("../images/bg_category_1.png") no-repeat center;
+    background-size: auto 120%;
+    color: #c59a77;
+}
+
+.mainItem.top:nth-child(2){
+    background: url("../images/bg_category_2.png") no-repeat center;
+    background-size: cover;
+    color: black;
+}
+
+.mainItem.top:nth-child(3){
+    background: linear-gradient(to right, rgb(178,136,102), rgb(220, 191, 196) 55%, rgb(201, 161,135));
+    color: white;
+}
 
 /* footer -------------*/
 .footer {
@@ -235,7 +326,9 @@ h3 {
     color: #8e8e8e;
     font-size: 1.2rem;
 }
-
+.footer a {
+    display: inline-block;
+}
 .footer > .col {
     flex: 0 0 12%;
     line-height: 1.4;
