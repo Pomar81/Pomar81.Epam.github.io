@@ -69,6 +69,21 @@ h3 {
     color: white
 }
 
+.arrow-right  {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    bottom: 275px;
+    right: 60px;
+    background-color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #c59a77;
+    font-size: 1.6rem;
+    padding-left: 2px;
+}
 
 
 /* header row 1 ----------------------*/
@@ -219,21 +234,7 @@ h3 {
     font-size: 1.2rem;
 }
 
-.arrow-right  {
-    width: 40px;
-    height: 40px;
-    position: absolute;
-    bottom: 275px;
-    right: 60px;
-    background-color: white;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: #c59a77;
-    font-size: 1.6rem;
-    padding-left: 2px;
-}
+
 
 
 .detailInfo a:hover,  .arrow-right:hover {
@@ -278,14 +279,14 @@ h3 {
     left: 40px;
 }
 
-.arrow-right.black-arrow {
+.black-arrow {
     color: white;
     background-color: black;
     border: 1px solid  #c59a77;
     z-index: 100;
 }
 
-.arrow-right.black-arrow:hover {
+.black-arrow:hover {
     color: black;
     background-color: white;
     border: none;
@@ -299,13 +300,19 @@ h3 {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    padding: 30px 30px;
-    width: 200px;
+    width: 100%;
+    height: 100%;
     font: 1.8rem ProximaNovaBold,  sans-serif;
     position: absolute;
     top: 0;
     left: 0;
     z-index: 50;
+}
+
+.top-category .product-desc {
+    flex: 0 0 50%;
+    align-self: flex-start;
+    padding: 30px 30px;
 }
 
 .top-image-bg {
