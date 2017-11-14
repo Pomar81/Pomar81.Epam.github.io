@@ -228,15 +228,41 @@ h3 {
 /* main ---------------*/
 .advert {
     height: 515px;
-    border: 1px solid;
     position: relative;
+
+
+    /*background: url("../images/adv_slider_1.png") no-repeat center;*/
+}
+.advertView {
+    width: 100%;
+    height: 100%;
+}
+
+.advert-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding-left: 100px;
+    padding-top: 100px;
     display: flex;
     flex-flow: nowrap column;
-    justify-content: center;
-    padding-left: 100px;
-    padding-bottom: 100px;
-    background: url("../images/adv_slider_1.png") no-repeat center;
+    justify-content: flex-start;
+    z-index: 50;
+}
 
+.slick-dots{
+    position: absolute;
+    width: 100%;
+    top: 60px;
+    right: 60px;
+    height: 50px;
+    width: auto;
+    z-index: 50;
+}
+.slick-dots li {
+    display: block;
 }
 
 .advert h2 {
@@ -276,9 +302,7 @@ h3 {
     font-size: 1.2rem;
 }
 
-.advertView {
-    display: none;
-}
+
 
 .advert .product-img {
     position: absolute;
