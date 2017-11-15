@@ -196,6 +196,9 @@ h3 {
     font-size: 1.2rem;
 }
 
+.itmCounter{
+    margin-left: 5px;
+}
 /* header row 2 ----------------------*/
 .header-row-2 {
     height: 96px;
@@ -333,10 +336,10 @@ h3 {
 .mainItem.wideItem {
     flex: 0 0 66.666666%;
     background: url("../images/slider2_1.png") no-repeat;
+    background-size: cover;
 }
 
 .mainItem.wideItem:hover {
-    flex: 0 0 66.666%;
     background: url("../images/slider2_2.png") no-repeat;
 }
 .top .arrow-right {
@@ -494,4 +497,22 @@ h3 {
 .social-ico span {
     color: #c59a77;
     font-size: 20px;
+}
+
+
+/* media queries -----------*/
+
+@media (max-width: 1024px)  {
+.mainItem.top {
+    flex: 0 0 33.3333%;
+}
+.mainItem {
+    flex: 0 0 50%;
+}
+.mainItem.wideItem {
+    flex: 0 0 100%;
+}
+.top-category .product-img {
+    max-width: 50%;
+}
 }
