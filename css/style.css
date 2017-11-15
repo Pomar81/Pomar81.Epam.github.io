@@ -319,7 +319,7 @@ h3 {
 }
 
 .mainItem {
-    flex: 0 0 33.333%;
+    flex: 0 0 33.333333%;
     border: 1px solid;
     height: 300px;
     position: relative;
@@ -327,10 +327,11 @@ h3 {
 
 .mainItem.top {
     height: 195px;
+    border: none;
 }
 
 .mainItem.wideItem {
-    flex: 0 0 66.666%;
+    flex: 0 0 66.666666%;
     background: url("../images/slider2_1.png") no-repeat;
 }
 
