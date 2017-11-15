@@ -404,6 +404,11 @@ h3 {
     align-self: flex-start;
 }
 
+.product-price {
+    position: absolute;
+    bottom: 30px;
+    left: 30px;
+}
 .product-name,
 .shop-header {
     font: 2.4rem ProximaNovaBold, sans-serif ;
