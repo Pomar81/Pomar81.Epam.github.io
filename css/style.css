@@ -223,6 +223,14 @@ h3 {
     align-items: center;
 }
 
+.header-row-3  li {
+    margin-right: 5px;
+}
+
+.header-row-3 li:last-child {
+    margin-right: 0;
+}
+
 
 .header-row-3 a:hover {
     color: chocolate;
@@ -313,13 +321,14 @@ h3 {
     top: 290px;
 }
 
-.wrapper {
+.wrapper,.top-wrapper,.product-wrapper {
     width: 100%;
     display: flex;
     justify-content: flex-start;
     flex-wrap: wrap;
     align-content: flex-start;
 }
+
 
 .mainItem {
     flex: 0 0 33.333333%;
@@ -342,6 +351,7 @@ h3 {
 
 .mainItem.wideItem:hover {
     background: url("../images/slider2_2.png") no-repeat;
+    background-size: cover;
 }
 .top .arrow-right {
     bottom: 30px;
@@ -408,24 +418,25 @@ h3 {
 }
 
 .product-desc-wrapper {
-    flex: 0 1 45%;
+    flex: 0 0 55%;
     padding: 30px 10px 30px 30px;
     align-self: flex-start;
     height: 100%;
 }
 
-.product-name,
-.shop-header {
+.product-name {
     font: 2.4rem ProximaNovaBold, sans-serif ;
     line-height: 24px;
     text-transform: uppercase;
+    margin-top: 0;
     margin-bottom: 20px;
     height: 20%;
-    overflow-y: hidden;
+    overflow: hidden;
+   /* min-width: 180px;*/
 }
 
-.product-desc
-{
+
+.product-desc {
     max-width: 125px;
     margin-bottom: 20px;
     font-size: 1.2rem;
@@ -436,7 +447,9 @@ h3 {
     height: 50%;
 }
 
-
+.product-img {
+    max-width: 45%;
+}
 
 .product-price {
     /*position: absolute;
@@ -453,11 +466,20 @@ h3 {
 }
 
 .shop-desc-wrapper {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 60%;
-    padding: 30px 0 30px 30px;
+    height: 90%;
+    width: 80%;
+    padding: 30px 0 0 30px;
+    overflow: hidden;
+}
+
+.shop-header {
+    font: 2.4rem ProximaNovaBold, sans-serif;
+    line-height: 24px;
+    text-transform: uppercase;
+    margin-top: 0;
+    margin-bottom: 20px;
+    height: 25%;
+    overflow: hidden;
 }
 
 .shop-desc{
@@ -467,7 +489,7 @@ h3 {
 
 .shop-desc{
     max-width: 80%;
-    padding-bottom: 20px;
+    margin: 0 0 20px 0;
     font-size: 1.4rem;
     line-height: 1.4;
     font-weight: 600;
@@ -516,15 +538,33 @@ h3 {
 
 /* media queries -----------*/
 
-@media (max-width: 1024px)  {
-.mainItem.top {
-    flex: 0 0 33.3333%;
-}
-.mainItem {
-    flex: 0 0 50%;
-}
-.mainItem.wideItem {
-    flex: 0 0 100%;
-}
+@media (max-width: 963px) {
+    .mainItem.top {
+        flex: 0 0 33.3333%;
+    }
+
+    .mainItem {
+        flex: 0 0 50%;
+    }
+
+    .mainItem.wideItem {
+        flex: 0 0 100%;
+    }
 
 }
+
+@media (max-width: 641px) {
+    .mainItem.top {
+        display: none;
+    }
+
+    .mainItem {
+        flex: 0 0 100%;
+    }
+
+    .mainItem.wideItem {
+        flex: 0 0 100%;
+    }
+
+}
+
