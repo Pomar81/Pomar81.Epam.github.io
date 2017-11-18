@@ -385,10 +385,12 @@ h3 {
 .top-image-bg {
     width: 100%;
     height: 100%;
-    position: absolute;
     display: block;
+    /*position: absolute;
     top: 0;
-    left: 0;
+    left: 0;*/
+    object-position: 100% 50%;
+    object-fit: cover;
 }
 
 .top:first-child {
